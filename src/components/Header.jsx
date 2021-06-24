@@ -1,12 +1,13 @@
 import React from 'react';
-import './Header.css'
+import c from './Header.module.css'
 import svg from '../a.svg'
+
 
 const Header = () => {
 	return (
-		<header className='header'>
-			<div className='logo'>
-				<img className='logo-img' src={svg} alt="" width='40' height='40'/>
+		<header className={c.header}>
+			<div className={c.logo}>
+				<img className={c.image} src={svg} alt="" width='30' height='30'/>
 			</div>
 		</header>
 	)

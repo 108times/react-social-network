@@ -1,0 +1,29 @@
+.sidebar {
+	grid-area: s;
+	background: #f1f1f1;
+}
+.items {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+.item {
+	padding: .5rem;
+	list-style: none;
+	display: block;
+	width: 100%;
+	text-align: end;
+}
+.link {
+	text-decoration: none;
+	padding: .2rem 1rem;
+	transition: 200ms;
+	border-radius: .25rem;
+	color: var(--color-lighter);
+	font-weight: 600;
+}
+.link:is(.active, :hover) {
+	color: var(--color-primary);
+}

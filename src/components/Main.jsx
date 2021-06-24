@@ -1,10 +1,10 @@
 import React from 'react'
-import './Main.css'
+import c from './Main.module.css'
 import Profile from './Profile';
 
 const Main = () => {
 	return (
-		<main className={'content'}>
+		<main className={c.content}>
 			<Profile/>
 		</main>
 	)

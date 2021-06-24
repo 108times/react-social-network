@@ -6,12 +6,12 @@ ReactDOM.render(<App/>, document.getElementById('root'))
 
 const setTheme = color => document.documentElement.className = color
 
-setTheme('light')
+setTheme('dark')
 
 
-const MyComponent = (
-	<main>
-		<h1 id='title'>Look ma!</h1>
-	</main>
-)
-console.log(MyComponent)
+// const MyComponent = (
+// 	<main>
+// 		<h1 id='title'>Look ma!</h1>
+// 	</main>
+// )
+// console.log(MyComponent)

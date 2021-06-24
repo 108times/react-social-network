@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
-
+    --color-primary: #ffa200;
+    --color-primary-lighter: #ffc572;
+    --color-primary-extra-light: #ffecd8;
+    --transition-fast: 200ms ease-in-out;
 }
 
 :root.dark {
     --bg-color: #121212;
-    --color: orange;
+    --color:#f1f1f1
 }
 
 :root.light {
     --bg-color: #f9f9f9;
-    --color: #333
+    --color: #333;
+    --color-lighter: #666;
 }
 
 * {
@@ -21,12 +25,12 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: var(--bg-color);
     color: var(--color);
 }
 
-#app {
+.app {
     display: grid;
     grid-template-columns: 12rem 1fr;
     grid-template-rows: 60px 1fr;
