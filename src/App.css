@@ -5,7 +5,7 @@
 }
 
 :root.dark {
-    --bg-color: #000;
+    --bg-color: #121212;
     --color: orange;
 }
 
@@ -39,15 +39,5 @@ body {
     overflow: hidden;
 }
 
-.header {
-    grid-area: h;
-    background: #e1e1e1;
-}
-.sidebar {
-    grid-area: s;
-    background: #f1f1f1;
-}
-.content {
-    grid-area: c;
-    background: #f9f9f9;
-}
+
+

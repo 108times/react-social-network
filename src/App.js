@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css'
-import Header from './components/Header';
-import Main from './components/Main';
-import Sidebar from './components/Sidebar';
+import Header from './components/Header.jsx';
+import Main from './components/Main.jsx';
+import Sidebar from './components/Sidebar.jsx';
 
 const App = () => {
 	return (
