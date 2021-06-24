@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
+    --color-primary-darker: #f09500;
     --color-primary: #ffa200;
     --color-primary-lighter: #ffc572;
     --color-primary-extra-light: #ffecd8;
     --transition-fast: 200ms ease-in-out;
+    --transition-mediocare: 300ms ease-in-out;
 }
 
 :root.dark {
@@ -25,14 +27,14 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'SF Pro Rounded', sans-serif;
     background: var(--bg-color);
     color: var(--color);
 }
 
-.app {
+.app-wrapper {
     display: grid;
-    grid-template-columns: 12rem 1fr;
+    grid-template-columns: 18rem 1fr;
     grid-template-rows: 60px 1fr;
     grid-template-areas:
         "h h "
@@ -41,6 +43,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 

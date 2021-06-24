@@ -6,24 +6,37 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	padding: 1rem;
+	align-items: flex-start;
+	padding: 1rem 1rem 1rem 3rem;
 }
 .item {
 	padding: .5rem;
 	list-style: none;
 	display: block;
-	width: 100%;
+	width: auto;
 	text-align: end;
+	position: relative;
 }
+
 .link {
 	text-decoration: none;
-	padding: .2rem 1rem;
-	transition: 200ms;
+	padding: .5rem 1rem;
+	transition: var(--transition-mediocare);
 	border-radius: .25rem;
 	color: var(--color-lighter);
-	font-weight: 600;
+	position: relative;
+	min-width: 8rem;
+	display: block;
+	text-align: left;
 }
-.link:is(.active, :hover) {
+.link:is(:hover) {
+	background: rgba(0,0,0,0.04);
+}
+.link:is(.active) {
+	color: var(--color-primary);
+
+}
+.active {
 	color: var(--color-primary);
 }
+

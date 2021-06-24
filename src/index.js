@@ -6,7 +6,7 @@ ReactDOM.render(<App/>, document.getElementById('root'))
 
 const setTheme = color => document.documentElement.className = color
 
-setTheme('dark')
+setTheme('light')
 
 
 // const MyComponent = (
