@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css'
-import Header from './components/Header.jsx';
-import Main from './components/Main.jsx';
-import Sidebar from './components/Sidebar.jsx';
+import Header from './components/Header/Header.jsx';
+import Main from './components/Main/Main.jsx';
+import Sidebar from './components/Sidebar/Sidebar.jsx';
 
 const App = () => {
 	return (
@@ -13,6 +13,5 @@ const App = () => {
 		</div>
 	)
 }
-
 
 export default App

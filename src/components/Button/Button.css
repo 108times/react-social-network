@@ -1,0 +1,21 @@
+.btn {
+    padding: .3rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--element-border-radius-small);
+    box-shadow: none;
+    margin:.5rem;
+    position: relative;
+}
+.btn.primary {
+    background: var(--color-primary-800);
+    color: var(--color-primary-100);
+}
+.btn.secondary {
+    box-shadow: 0 0 0 1px var(--color-primary-800);
+    color: var(--color-primary-800);
+    background: transparent;
+}
+.btn-text {
+    pointer-events: none;
+}

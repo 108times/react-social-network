@@ -1,20 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
-    --color-primary-darker: #f09500;
-    --color-primary: #ffa200;
-    --color-primary-lighter: #ffc572;
-    --color-primary-extra-light: #ffecd8;
-    --transition-fast: 200ms ease-in-out;
+
+
+    --gray-100: #eee;
+    --gray-200: #ddd;
+    --gray-300: #ccc;
+    --gray-400: #bbb;
+    --gray-500: #aaa;
+    --gray-600: #999;
+    --gray-700: #888;
+    --gray-800: #777;
+
+    --transition-fast: 100ms ease-in-out;
     --transition-mediocare: 300ms ease-in-out;
+
+    --element-border-radius: .75rem;
+    --element-border-radius-small: .25rem;
+
 }
 
 :root.dark {
+    --color-primary-100: #ffecd8;
+    --color-primary-200: #ffd59b;
+    --color-primary-300: #ffc160;
+    --color-primary-400: #ffb94a;
+    --color-primary-500: #ffaa4b;
+    --color-primary-600: #ffaf3b;
+    --color-primary-700: #ffa200;
+    --color-primary-800: #f09500;
+
     --bg-color: #121212;
-    --color:#f1f1f1
+    --color:#f1f1f1;
 }
 
 :root.light {
+    --color-primary-100: #e7f0ff;
+    --color-primary-200: #d5e6ff;
+    --color-primary-300: #b8d4ff;
+    --color-primary-400: #9ac0ff;
+    --color-primary-500: #78afff;
+    --color-primary-600: #5f9cff;
+    --color-primary-700: #2c7dff;
+    --color-primary-800: #005fff;
+
     --bg-color: #f9f9f9;
     --color: #333;
     --color-lighter: #666;
@@ -27,14 +56,14 @@
 }
 
 body {
-    font-family: 'SF Pro Rounded', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: var(--bg-color);
     color: var(--color);
 }
 
 .app-wrapper {
     display: grid;
-    grid-template-columns: 18rem 1fr;
+    grid-template-columns: 16rem 1fr;
     grid-template-rows: 60px 1fr;
     grid-template-areas:
         "h h "

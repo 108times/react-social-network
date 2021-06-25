@@ -1,6 +1,6 @@
 .header {
 	grid-area: h;
-	background: #e1e1e1;
+	background: #eaeaea;
 	position: relative;
 }
 
@@ -11,16 +11,18 @@
 	align-items: center;
 	height: 100%;
 	width: 60px;
-	background: #d2d2d2;
+	background: var(--gray-200);
 	cursor: pointer;
 	transition: var(--transition-fast);
+
 }
 .logo:hover {
-	background: var(--color-primary-extra-light);
+	background: var(--gray-300);
 }
 .logo:hover img {
 	transform: scale(1.15);
 }
 .image {
+	pointer-events: none;
 	transition: inherit;
 }
