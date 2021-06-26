@@ -1,0 +1,30 @@
+.new-post {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--element-border-radius);
+    background: var(--gray-100);
+    margin: 1rem;
+}
+.text {
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+    outline: none;
+    max-height: 5rem;
+    padding: 1rem;
+
+}
+.options {
+    padding: 1rem;
+
+    position: relative;
+    display: none;
+}
+.options.shown {
+    display: flex;
+}
+.btn {
+    max-width: 12rem;
+    margin: 0 !important;
+    justify-self: flex-end;
+}

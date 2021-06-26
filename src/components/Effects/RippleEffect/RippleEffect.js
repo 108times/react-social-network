@@ -2,7 +2,6 @@ import './RippleEffect.css'
 
 
 const rippleEffect = ( event) => {
-
 	const getRippleContainer = target => {
 		return target.querySelector('.ripple-container') ?? (
 			() => {

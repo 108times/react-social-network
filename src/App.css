@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
 
@@ -18,6 +18,10 @@
     --element-border-radius: .75rem;
     --element-border-radius-small: .25rem;
 
+    --element-box-shadow-border-default: 0 0 0 .7px var(--gray-200);
+    --layout-width: 960px;
+    --layout-body-width: 795px;
+    --layout-sidebar-width: 164px;
 }
 
 :root.dark {
@@ -56,22 +60,21 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,'Roboto','Helvetica Neue',Geneva,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",sans-serif,arial,Tahoma,verdana;
     background: var(--bg-color);
     color: var(--color);
 }
 
 .app-wrapper {
     display: grid;
-    grid-template-columns: 16rem 1fr;
+    grid-template-columns: var(--layout-sidebar-width) 1fr;
     grid-template-rows: 60px 1fr;
     grid-template-areas:
         "h h "
         "s c ";
-
-    width: 100vw;
+    width: var(--layout-width);
     height: 100vh;
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin: 0 auto;
 }
 

@@ -10,7 +10,7 @@ const Button = ({
 	className = null
 } = {}) => {
 	return (
-		<button onClick={onclick} data-effects = {effects.join(',')}  className={`btn ${(className ?? classList.join(' '))}`}>
+		<button onClick={onclick} data-effects = {effects ? effects.join(',') : ''}  className={`btn ${(className ?? classList.join(' '))}`}>
 			<span className='btn-text'>{text}</span>
 		</button>
 	)

@@ -1,16 +1,17 @@
 .sidebar {
 	grid-area: s;
 	background: #f1f1f1;
+	width: var(--layout-sidebar-width);
 }
 .items {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	padding: 1rem 1rem 1rem 3rem;
+	font-size: .75rem;
+	padding:.5rem 0;
 }
 .item {
-	padding: .5rem .2rem;
 	list-style: none;
 	display: block;
 	width: auto;
@@ -20,7 +21,7 @@
 
 .link {
 	text-decoration: none;
-	padding: .1rem 1rem;
+	padding: .5rem;
 	transition: var(--transition-fast);
 	border-radius: .15rem;
 	color: var(--color-lighter);

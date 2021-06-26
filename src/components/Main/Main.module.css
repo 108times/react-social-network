@@ -1,5 +1,9 @@
 .content {
 	grid-area: c;
-	background: #f9f9f9;
-	overflow-y: scroll;
+
+	display: grid;
+	grid-template-columns: var(--layout-body-width) 1fr;
+	grid-template-areas:
+			"content rightSidebar"
+			"content rightSidebar";
 }

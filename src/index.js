@@ -19,6 +19,9 @@ const effects = {
 
 const elementsWithEffects = document.querySelectorAll('[data-effects]')
 elementsWithEffects.forEach((element) => {
+	console.log(element)
+	if (!element.dataset.effects ) return
+
 	const elEffects = element.dataset.effects.split(',')
 		for (let eff of elEffects) {
 			const [eventName, handlerName] = [...eff.split('-')]

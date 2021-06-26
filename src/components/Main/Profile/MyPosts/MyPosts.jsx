@@ -1,7 +1,7 @@
 import c from './MyPosts.module.css'
 import React from 'react';
-import Post from '../Post/Post';
-import NewPost from '../NewPost/NewPost';
+import Post from './Post/Post';
+import NewPost from './NewPost/NewPost';
 
 
 const MyPosts = props => {

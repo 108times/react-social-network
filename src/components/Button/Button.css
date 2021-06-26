@@ -6,6 +6,7 @@
     box-shadow: none;
     margin:.5rem;
     position: relative;
+    background: transparent;
 }
 .btn.primary {
     background: var(--color-primary-800);

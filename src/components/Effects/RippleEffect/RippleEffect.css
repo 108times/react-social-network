@@ -14,7 +14,7 @@
 	height: var(--h);
 	transition: var(--transition-mediocare);
 	opacity: .8;
-	background: rgba(0,0,0,.15);
+	background: rgba(0,0,0,.25);
 	transform: translateX(-50%) translateY(-50%);
 	border-radius: 50%;
 	z-index: 2;
@@ -28,5 +28,5 @@
 	opacity: 0;
 }
 .primary .ripple {
-	background: rgba(255,255,255,0.15);
+	background: rgba(255,255,255,0.25);
 }
